@@ -91,3 +91,5 @@ The script will generate `sales_report_clean.pdf` in the same directory.
 *Output*
 
 [sales_report_clean.pdf](https://github.com/user-attachments/files/20566788/sales_report_clean.pdf)
+
+![Image](https://github.com/user-attachments/assets/4cb92304-aa47-4d1d-9c22-c0a19e6105cd)
