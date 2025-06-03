@@ -95,3 +95,4 @@ if __name__ == "__main__":
     data = read_data(csv_file)
     summary, total_sales, avg_sales, top_dept, total_employees = analyze_data(data)
     generate_pdf(summary, total_sales, avg_sales, top_dept, total_employees, pdf_file)
+
