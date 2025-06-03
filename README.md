@@ -88,5 +88,7 @@ The script will generate `sales_report_clean.pdf` in the same directory.
 * Rows with missing or non-numeric sales values are skipped.
 * You can rename `data.csv` or `sales_report_clean.pdf` in the script if needed.
 
+*Output*
+
 
 
