@@ -90,5 +90,4 @@ The script will generate `sales_report_clean.pdf` in the same directory.
 
 *Output*
 
-
-
+[sales_report_clean.pdf](https://github.com/user-attachments/files/20566788/sales_report_clean.pdf)
