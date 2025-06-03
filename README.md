@@ -11,88 +11,82 @@ Duration:4 Weeks
 
 Mentor:Neela Santhosh Kumar
 
-📊 Sales Summary Report Generator
-This project is a Python-based tool that reads employee sales data from a CSV file and generates a well-formatted PDF report summarizing the performance of various departments. It provides insights into the total and average sales, departmental breakdowns, and highlights the top-performing department.
 
-🚀 Features
-Reads and processes structured sales data from a CSV file
 
-Generates a professional PDF report with:
+# 📊 Sales Summary Report Generator
 
-Overall summary (total employees, total sales, average sales)
+This Python project reads employee sales data from a CSV file and generates a clean, professional PDF report summarizing sales performance across departments.
 
-Department-wise breakdown (employee count, total sales)
+## 🚀 Features
 
-Highlight of the top-performing department
+- Reads structured sales data from a `.csv` file
+- Generates a professional PDF report with:
+  - ✅ Total employees and sales
+  - 📈 Average sales per employee
+  - 🏆 Top-performing department
+  - 🗂 Department-wise employee and sales summary
+- Ignores malformed or missing data entries
+- Alternating row colors for better readability
 
-Auto-handling of malformed or missing data entries
+## 🛠 Technologies Used
 
-Clean and readable layout with alternating row colors for clarity
+- Python 3
+- [FPDF](https://pyfpdf.github.io/fpdf2/) for PDF generation
+- Built-in modules: `csv`, `collections`, `datetime`
 
-🧰 Technologies Used
-Python 3.x
+## 📁 File Structure
 
-FPDF — for PDF generation
+```
 
-csv, collections, and datetime — for data handling and processing
+📦 sales-summary-report/
+├── sales\_report.py            # Main script
+├── data.csv                   # Input CSV data file
+├── sales\_report\_clean.pdf     # Generated PDF report
+└── README.md                  # Project documentation
 
-📁 Project Structure
-graphql
-Copy
-Edit
-sales_report_generator/
-├── sales_report.py        # Main script to generate the report
-├── data.csv               # Input file containing sales data
-├── sales_report_clean.pdf # Output PDF report (auto-generated)
-└── README.md              # Project documentation
-📝 CSV Format
-The input data.csv file must contain the following headers:
+```
 
-python-repl
-Copy
-Edit
-Name, Department, Sales
-John Doe, Electronics, 15000
-Jane Smith, Furniture, 18000
+## 📝 CSV Format
+
+The input CSV (`data.csv`) should include the following headers:
+
+```
+
+Name,Department,Sales
+John Doe,Electronics,15000
+Jane Smith,Furniture,18000
 ...
-Name – Name of the employee
 
-Department – Department name (string)
+````
 
-Sales – Total sales amount (integer)
+- `Name` — Employee name (string)
+- `Department` — Department name (string)
+- `Sales` — Sales amount (integer)
 
-▶️ How to Run
-Install Dependencies
+## ▶️ How to Use
 
-bash
-Copy
-Edit
+1. **Install FPDF**
+
+```bash
 pip install fpdf
-Prepare your CSV file (e.g., data.csv) in the required format.
+````
 
-Run the script
+2. **Place your CSV file** (named `data.csv`) in the project directory.
 
-bash
-Copy
-Edit
+3. **Run the script**
+
+```bash
 python sales_report.py
-Output
+```
 
-A file named sales_report_clean.pdf will be generated in the same directory.
+4. **View Output**
 
-✅ Example Output
-The PDF includes:
+The script will generate `sales_report_clean.pdf` in the same directory.
 
-A header with the report title
+## 📌 Notes
 
-Footer with generation timestamp
+* Rows with missing or non-numeric sales values are skipped.
+* You can rename `data.csv` or `sales_report_clean.pdf` in the script if needed.
 
-Overview with totals and averages
 
-Department-wise summary in a tabular format
-
-📌 Notes
-The script automatically skips rows with invalid data (e.g., non-integer sales).
-
-Modify csv_file and pdf_file variables in the script to customize input/output filenames.
 
